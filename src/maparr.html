@@ -1,0 +1,30 @@
+    
+  
+  <p id="showData"></p>
+  <script>
+
+//         const arr= ["vaishnav","himanshu" ,"singh"];
+    
+
+//         const newrr= arr.map(function(cvalue,i,arr){
+//             return cvalue +i;
+//             console.log(arr);
+
+//         });
+// console.log(newarr);
+
+
+const studentData=[
+    { id:1 ,name: "vaishnav" , degree:"nalla"},
+    { id:2 ,name: "vishu" , degree:"Btech"},
+    { id:1 ,name: "bhote" , degree:"msc"},
+    
+    
+];
+const newData=studentData.map((cvalue)=>{
+    return`My name is ${cvalue.name}. My id is ${cvalue.id}. My degree uis${cvalue.degree}`;
+});
+console.log(newData);
+
+document.getElementById('showData'  ).innerHTML= newData;
+    </script>

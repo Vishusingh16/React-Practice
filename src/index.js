@@ -174,20 +174,28 @@ import  Sdata from "./Sdata";
 ReactDOM.render(
   <>
   <h1 className="heading_style"> List of top 4 netflix series</h1>
+{Sdata.map((val,index)=>{
+  console.log(index);
+  return(
 
-
+ 
 <Card 
+key={val.id}
 imgsrc={Sdata[0].imgsrc}
 title={Sdata[0].title}
 link={Sdata[0].link}
 sname={Sdata[0].sname}
  />
+ );
+})} 
 <Card
+
 imgsrc={Sdata[1].imgsrc}
 title={Sdata[1].title}
 link={Sdata[1].link}
 sname={Sdata[1].sname}
 />
+
 <Card 
 imgsrc={Sdata[2].imgsrc}
 title={Sdata[2].title}
@@ -200,9 +208,15 @@ title={Sdata[2].title}
 link={Sdata[2].link}
 sname={Sdata[2].sname}
     />
+
+
     </>,
+
+
+
     document.getElementById('root')
 );
+
 
 
 
